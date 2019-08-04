@@ -116,7 +116,7 @@ class ParallaxScrollView extends Component {
 			renderContentBackground,
 			contentContainerStyle
 		})
-		const footerSpacer = this._renderFooterSpacer({ contentBackgroundColor })
+		//const footerSpacer = this._renderFooterSpacer({ contentBackgroundColor })
 		const maybeStickyHeader = this._maybeRenderStickyHeader({
 			parallaxHeaderHeight,
 			stickyHeaderHeight,
@@ -146,7 +146,7 @@ class ParallaxScrollView extends Component {
 					},
 					foreground,
 					bodyComponent,
-					footerSpacer
+					//footerSpacer
 				)}
 				{maybeStickyHeader}
 			</View>
@@ -349,7 +349,7 @@ class ParallaxScrollView extends Component {
 		)
 	}
 
-	_renderFooterSpacer({ contentBackgroundColor }) {
+	/*_renderFooterSpacer({ contentBackgroundColor }) {
 		return (
 			<View
 				ref={ref => {
@@ -360,7 +360,7 @@ class ParallaxScrollView extends Component {
 				style={{ backgroundColor: contentBackgroundColor }}
 			/>
 		)
-	}
+	}*/
 
 	_maybeRenderStickyHeader({
 		parallaxHeaderHeight,
